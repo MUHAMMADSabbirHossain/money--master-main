@@ -21,17 +21,18 @@
             <div class="text-center bg-neutral-200">
                 <!-- income division -->
                 <h2 class="text-3xl font-bold mt-6">Income</h2>
-                <p class="text-xl font-bold mt-6">Income: <input type="text"></p>
+                <p class="text-xl font-bold mt-6">Income: <input id="income-input" type="text"></p>
 
                 <!-- expenses division -->
                 <h2 class="text-3xl font-bold mt-6">Expenses</h2>
-                <p class="text-xl font-bold mt-6">Food: <input type="text"></p>
-                <p class="text-xl font-bold mt-6">Rent: <input type="text"></p>
-                <p class="text-xl font-bold mt-6">Clothes: <input type="text"></p>
+                <p class="text-xl font-bold mt-6">Food: <input id="food-expenses-input" type="text"></p>
+                <p class="text-xl font-bold mt-6">Rent: <input id="rent-expenses-input" type="text"></p>
+                <p class="text-xl font-bold mt-6">Clothes: <input id="clothes-expenses-input" type="text"></p>
 
                 <!-- calculate division -->
-                <button class="text-3xl font-bold mt-6 bg-sky-400 px-12 py-2 rounded-md text-white">Calculate</button>
-                <h2 class="text-3xl font-bold mt-6">Total Expenses: $<span>0.0</span></h2>
+                <button id="calculate-btn"
+                    class="text-3xl font-bold mt-6 bg-sky-400 px-12 py-2 rounded-md text-white">Calculate</button>
+                <h2 class="text-3xl font-bold mt-6">Total Expenses: $<span id="total-expenses">0.0</span></h2>
                 <h2 class="text-3xl mt-6">Balance: $<span>0.0</span></h2>
 
                 <!-- saving division -->
