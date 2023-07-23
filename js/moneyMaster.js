@@ -1,7 +1,6 @@
-console.log('money master file');
+// console.log('money master file');
 
 // calculate btn function----------
-
 document.getElementById('calculate-btn').addEventListener('click', function () {
     // calculate division input field
     const incomeInput = getInputValueById('income-input');
@@ -30,6 +29,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 // saving btn function----------
 document.getElementById('save-btn').addEventListener('click', function () {
     const balance = getElementTextById('balance');
+    setElementTextById('balance', balance);
 
     const savingPercentageInput = getInputValueById('save-input');
 
