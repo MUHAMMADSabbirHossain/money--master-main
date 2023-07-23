@@ -17,6 +17,9 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
     const newBalance = previousBalance + incomeInput - newTotalExpenses;
 
+    // error handling function
+    irrationalData(incomeInput, newTotalExpenses);
+
     // set innerText to element
     setElementTextById('total-expenses', newTotalExpenses);
     setElementTextById('balance', newBalance);
@@ -34,6 +37,9 @@ document.getElementById('save-btn').addEventListener('click', function () {
     const savingPercentageInput = getInputValueById('save-input');
 
     const savingAmount = balance * (savingPercentageInput / 100);
+
+    // error handling function
+    irrationalData(balance, savingAmount);
 
     setElementTextById('saving-amount', savingAmount);
 
