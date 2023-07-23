@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master Main</title>
+    <!-- tailwind linked -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <!-- heading section -->
     <header>
         <h1 class="text-5xl font-bold text-center mt-6 text-amber-300">Money Master!</h1>
     </header>
 
+    <!-- main section -->
     <main>
         <section class="grid grid-cols-2 gap-20 mt-10 p-12">
+            <!-- image division -->
             <div>
                 <img src="./image/zlataky-cz-y7jRMXOz7pE-unsplash.jpg" alt="">
             </div>
+
+            <!-- calculation division -->
             <div class="text-center bg-neutral-200 pb-6">
                 <!-- income division -->
                 <h2 class="text-3xl font-bold mt-6">Income</h2>
@@ -41,16 +47,13 @@
                 </p>
                 <p class="text-xl font-bold mt-6">Saving Amount: $<span id="saving-amount">0.0</span></p>
                 <p class="text-xl font-bold mt-6">Remaining Balance: $ <span id="remaining-balance">0.00</span></p>
-
             </div>
         </section>
-
-
     </main>
 
+    <!-- JavaScript section -->
     <script src="./js/utilities.js"></script>
     <script src="./js/moneyMaster.js"></script>
-
 </body>
 
 </html>
