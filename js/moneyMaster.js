@@ -8,6 +8,11 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const rentExpensesInput = getInputValueById('rent-expenses-input');
     const clothesExpensesInput = getInputValueById('clothes-expenses-input');
 
+    const totalExpenses = getElementTextById('total-expenses');
+    const balance = getElementTextById('balance');
+
+
+
 
 
 })

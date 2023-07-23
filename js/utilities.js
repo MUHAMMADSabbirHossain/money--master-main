@@ -7,3 +7,9 @@ function getInputValueById(elementInput) {
     return elementValue;
 }
 
+function getElementTextById(elementInnerText) {
+    const elementTextField = document.getElementById(elementInnerText);
+    const elementTextString = elementTextField.innerText;
+    const elementText = parseFloat(elementTextString);
+    return elementText;
+}
