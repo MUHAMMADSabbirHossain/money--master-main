@@ -8,12 +8,18 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const rentExpensesInput = getInputValueById('rent-expenses-input');
     const clothesExpensesInput = getInputValueById('clothes-expenses-input');
 
-    const totalExpenses = getElementTextById('total-expenses');
-    const balance = getElementTextById('balance');
+    const previousTotalExpenses = getElementTextById('total-expenses');
+    const previousBalance = getElementTextById('balance');
 
+    const newTotalExpenses = previousTotalExpenses + foodExpensesInput + rentExpensesInput + clothesExpensesInput;
 
+    const newBalance = previousBalance + incomeInput - newTotalExpenses;
 
+    setElementTextById('total-expenses', newTotalExpenses);
+    setElementTextById('balance', newBalance);
 
-
+    console.log(foodExpensesInput);
+    console.log(newTotalExpenses);
+    console.log(newBalance);
 })
 
